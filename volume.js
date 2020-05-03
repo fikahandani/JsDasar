@@ -1,4 +1,5 @@
-
+const tb= "";
+const tk= "";
 function jumlahTabung(){
     var r1 = document.getElementById("pertamaTbg").value;
     var r2 = document.getElementById("keduaTbg").value;
@@ -12,13 +13,13 @@ function jumlahTabung(){
         alert("Volume Tabung Pertama "+vol1);
         alert("Volume Tabung Kedua "+vol2);
         alert("Jumlah Volume Tabung "+totalTbg);
+        this.tb = totalTbg;
     }
 }
 function jumlahKeduanya(){
     var kubus = this.total;
     var tabung = this.totalTbg;
-    var keduanya = kubus+tabung;
-    console.log(this.totalTbg);
+    var keduanya = this.tb+this.tk;
     alert("Jika hasil keduanya dijumlahkan adalah "+keduanya);
 }
 function jumlahKubus(){
@@ -33,8 +34,21 @@ function jumlahKubus(){
         volumA = pertama*pertama*pertama;
         volumB = kedua*kedua*kedua;
         const total = volumA+volumB;
+        this.tk = total;
         alert("Volume Kubus Pertama Adalah "+volumA);
         alert("Volume Kubus Kedua Adalah "+volumB);
         alert("Hasil Penjumlahan Volume Adalah "+total);
     }
+}
+function selisihKeduanya(){
+    var A = this.tb;
+    var B = this.tk;
+    var selisih;
+    if(A>=B){
+        selisih = A-B;
+    }
+    else{
+        selisih = B-A;
+    }
+    alert("Selisih Volume Keduanya Adalah "+selisih);
 }
