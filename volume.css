@@ -1,0 +1,33 @@
+body{
+    background-color: lavender;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 50px;   
+}
+h3{
+    color: black;
+}
+
+.question{
+    color: indigo;
+}
+.number{
+    border-color: rgb(43, 31, 114);
+    border-radius: 4px;
+    height: 30px;
+    width: 500px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+.button{
+    margin-top: 12px;
+    height: 30px;
+    width: 80px;
+    border-color: rgb(38, 87, 117);
+    font-family: cursive;
+    font: bold;
+    background-color: rgb(151, 201, 196);
+    border-radius: 4px;
+}
