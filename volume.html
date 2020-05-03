@@ -3,22 +3,47 @@
         <title>
             Menghitung Volume dua buah kubus
         </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="volume.css">
         <script src="volume.js"></script>
     </head>
     <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 form-volume left">
+                <h4>Menghitung Jumlah Volume Pada Dua Balok</h4>
+                <h4>Sekaligus Mempelajari Function Dasar pada JavaScript</h4>
+                <label>Masukan Panjang Sisi Pertama</label>
+                <input class="number" type="number" placeholder="Panjang Sisi Kubus Pertama" id="pertama">
+                <label>Masukan Panjang Sisi Kedua</label>
+                <input class="number" type="number" placeholder="Panjang Sisi Kubus Kedua" id="kedua">
+            <div>
+                <button onclick=jumlahKubus() class="button">Submit Volume Kubus</button>
+            </div>
+                    
+            </div>
+            <div class="col-md-6 form-volume right">
+                <h4>Menghitung Jumlah Volume Pada Dua Tabung (tinggi tabung 6)</h4>
+                <h4>Sekaligus Mempelajari Function Dasar pada JavaScript</h4>
+                <label>Masukan Panjang Jari-jari Tabung Pertama</label>
+                <input class="number" type="number" placeholder="Panjang Sisi Kubus Pertama" id="pertamaTbg">
+                <label>Masukan Panjang Jari-jari Tabung Kedua</label>
+                <input class="number" type="number" placeholder="Panjang Sisi Kubus Kedua" id="keduaTbg">
+                <div>
+                    <button onclick=jumlahTabung() class="button" id="submit">Submit Volume Tabung</button>
+                </div>
+                   
+            </div>
+            <button class="button" onclick=jumlahKeduanya()>Jumlahkan Keduanya</button>
+        </div>
+
+    </div>
+   
     <form>
-    <div class="question">
-        <h3>Menghitung Jumlah Volume pada sebuah Balok</h3>
-        <h3>Sekaligus Mempelajari Function Dasar pada JavaScript</h3>
-        <h4>Masukan Panjang Sisi Volume Kubus Pertama</h4>
-        <input class="number" type="number" placeholder="Panjang Sisi Kubus Pertama" id="pertama">
-        <h4>Masukan Panjang Sisi Volume Kubus Kedua</h4>
-        <input class="number" type="number" placeholder="Panjang Sisi Kubus Kedua" id="kedua">
-    </div>
-    <div>
-        <button onclick=jumlah() class="button" id="submit">Submit</button>
-    </div>
+
     </form>
     </body>
 </html>

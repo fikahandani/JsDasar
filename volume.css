@@ -1,15 +1,29 @@
 body{
-    background-color: lavender;
-    text-align: center;
-    font-family: cursive;
-    margin-top: 50px;   
+    background-color: rgb(210, 218, 235);
+    text-align: left;
+    font-family: cursive; 
 }
 h3{
     color: black;
 }
+.container{
+    width: auto;
+}
+.row{
+    margin: auto;
+    margin-top: 7px;
+    width: 100%;
+}
+.form-volume{
+    border-radius: 1px;
+    background-color: rgb(190, 203, 231);
+}
+.left{
+    margin-top: 2px;
+}
+.right{
+    margin-top: 2px;
 
-.question{
-    color: indigo;
 }
 .number{
     border-color: rgb(43, 31, 114);
@@ -23,8 +37,8 @@ h3{
 }
 .button{
     margin-top: 12px;
-    height: 30px;
-    width: 80px;
+    height: auto;
+    width: auto;
     border-color: rgb(38, 87, 117);
     font-family: cursive;
     font: bold;
