@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Pengenalan Fungsi Rekursif</title>
+        <link rel="stylesheet" type="text/css" href="rekursif.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body class="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 box">
+                    <h3>
+                        Halaman ini masih akan di edit
+                    </h3>
+                    <h3 class="judul">Apa itu fungsi Rekursif?</h3>
+                    <p>
+                        Fungsi Rekursif adalah sebuah fungsi yang akan dipanggil didalam fungsi yang sama, sampai terdapat satu base case atau sebuah kondisi yang membuat fungsi tersebut akan berhenti. Fungsi Rekursif biasanya digunakan sebagai pengganti dari perulangan. Tetapi dalam kondisi yang lain, fungsi rekursif juga akan digunakan dalam hal lain. 
+                    </p>
+                </div>
+                <div class="col-md-6 box">
+                    <h3 class="judul">Penerapan Fungsi Rekursif</h3>
+                    <p>
+                        Dalam hal ini, kita akan memberikan nilai input tertentu pada form dibawah dan akan melihat berapa kali sebuah fungsi akan dipanggil dengan menggunakan alert.
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h3 class="judul">Input Nilai</h3>
+                    <input type="number" placeholder="masukan sebuah nilai" id="input">
+                    <button onclick=okey() >Check</button>
+                    <script>
+                        var input = ""
+                        function okey(){
+                            var n = document.getElementById("input").value;
+                            this.input = n;
+                            rekursif(n);
+                        }
+                        function rekursif(n){
+                            if(n === 0){
+                                return; // base case
+                            }
+                            rekursif(n-1);
+                            alert("Hasil Fungsi Rekursif "+n);
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
