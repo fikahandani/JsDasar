@@ -10,40 +10,49 @@
     <body class="background">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 box">
-                    <h3>
-                        Halaman ini masih akan di edit
-                    </h3>
-                    <h3 class="judul">Apa itu fungsi Rekursif?</h3>
-                    <p>
-                        Fungsi Rekursif adalah sebuah fungsi yang akan dipanggil didalam fungsi yang sama, sampai terdapat satu base case atau sebuah kondisi yang membuat fungsi tersebut akan berhenti. Fungsi Rekursif biasanya digunakan sebagai pengganti dari perulangan. Tetapi dalam kondisi yang lain, fungsi rekursif juga akan digunakan dalam hal lain. 
-                    </p>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3 class="judul">Apa itu fungsi Rekursif?</h3>
+                        <p class="text">
+                            Fungsi Rekursif adalah sebuah fungsi yang akan dipanggil didalam fungsi yang sama, sampai terdapat satu base case atau sebuah kondisi yang membuat fungsi tersebut akan berhenti. Fungsi Rekursif biasanya digunakan sebagai pengganti dari perulangan. Tetapi dalam kondisi yang lain, fungsi rekursif juga akan digunakan dalam hal lain. 
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-6 box">
-                    <h3 class="judul">Penerapan Fungsi Rekursif</h3>
-                    <p>
-                        Dalam hal ini, kita akan memberikan nilai input tertentu pada form dibawah dan akan melihat berapa kali sebuah fungsi akan dipanggil dengan menggunakan alert.
-                    </p>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3 class="judul">Penerapan Fungsi Rekursif</h3>
+                        <p class="text">
+                            Dalam hal ini, kita akan memberikan nilai input tertentu pada form dibawah dan akan melihat berapa kali sebuah fungsi akan dipanggil dengan menggunakan alert.
+                            Intinya coding ini dibuat hanya untuk mengisi waktu luang saja sih hehe
+                            Boleh di edit dan ditambahkan supaya menjadi lebih baik :)
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-12">
-                    <h3 class="judul">Input Nilai</h3>
-                    <input type="number" placeholder="masukan sebuah nilai" id="input">
-                    <button onclick=okey() >Check</button>
-                    <script>
-                        var input = ""
-                        function okey(){
-                            var n = document.getElementById("input").value;
-                            this.input = n;
-                            rekursif(n);
-                        }
-                        function rekursif(n){
-                            if(n === 0){
-                                return; // base case
-                            }
-                            rekursif(n-1);
-                            alert("Hasil Fungsi Rekursif "+n);
-                        }
-                    </script>
+                    <div class="box">
+                        <h3 class="judul">Input Nilai</h3>
+                        <div>
+                            <input class="input" type="number" placeholder="masukan sebuah nilai" id="input">
+                        </div>
+                        <div>
+                            <button class="button" onclick=okey() >Check</button>
+                            <script>
+                                var input = ""
+                                function okey(){
+                                    var n = document.getElementById("input").value;
+                                    this.input = n;
+                                    rekursif(n);
+                                }
+                                function rekursif(n){
+                                    if(n === 0){
+                                        return; // base case
+                                    }
+                                    rekursif(n-1);
+                                    alert("Hasil Fungsi Rekursif "+n);
+                                }
+                            </script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
