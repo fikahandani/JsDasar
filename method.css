@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(73, 83, 110);
+}
+.box{
+    background-color: rgb(189, 189, 216);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.first{
+    margin-top: 20px;
+}
+.judul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+.imp{
+    background-color: rgb(189, 189, 216);
+    border-radius: 1px;
+}
