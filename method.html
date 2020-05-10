@@ -5,6 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="method.js"></script>
         <link rel="stylesheet" href="method.css" >
     </head>
     <body>
@@ -43,21 +44,37 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row box">
                 <div class="col-md-12 imp">
                     <h3 class="judul">Contoh Implementasi Method dengan Menggunakan Array</h3>
                 </div>
-                <div class="col-md-3 imp">
+                <div class="col-md-3">
                     <h3>Push</h3>
+                    <div>
+                        <input id="push" class="input" type="number" placeholder="input number to push">
+                    </div>
+                    <button onclick=getPush() >Push</button>
                 </div>
-                <div class="col-md-3 imp">
-                    <h3>Push</h3>
+                <div class="col-md-3">
+                    <h3>Pop</h3>
+                    <div>
+                        <input disabled id="pop" class="input" type="number" placeholder="input number to pop">
+                    </div>
+                    <button onclick=getPop()>Pop</button>
                 </div>
-                <div class="col-md-3 imp">
-                    <h3>Push</h3>
+                <div class="col-md-3">
+                    <h3>Unshift</h3>
+                    <div>
+                        <input id="unshift" class="input" type="number" placeholder="input number to unshift">
+                    </div>
+                    <button onclick=getUnshift()>Unshift</button>
                 </div>
-                <div class="col-md-3 imp">
-                    <h3>Push</h3>
+                <div class="col-md-3">
+                    <h3>Shift</h3>
+                    <div>
+                        <input disabled id="shift" class="input" type="number" placeholder="input number to shift">
+                    </div>
+                    <button onclick=getShift()>Shift</button>
                 </div> 
             </div>
         </div>   
