@@ -5,8 +5,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <script src="method.js"></script>
-        <link rel="stylesheet" href="method.css" >
+        <script src="js/method.js"></script>
+        <link rel="stylesheet" href="css/method.css" >
     </head>
     <body>
         <div class="container">
@@ -76,6 +76,42 @@
                     </div>
                     <button onclick=getShift()>Shift</button>
                 </div> 
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <h3 class="judul">Method Slice dan Splice</h3>
+                        <p>Slice digunakan untuk mengiris bagian dari sebuah array yang kemudian akan menghasilkan sebuah array baru. Sedangkan splice digunakan untuk menyambung atau menambahkan elemen pada tengah array.</p>
+                        <p>Rumus dari Splice adalah splice(index awal, mau dihapus berapa, elemen baru 1, elemen baru 2, .... dst). Elemen pada fungsi mau dihapus berapa adalah elemen fungsional, artinya elemen tersebut boleh dipakai atau boleh tidak dipakai </p>
+                        <p>Rumus dari Slice adalah slice(indexAwal, indexAkhir). Index awal akan masuk dalam array yang baru, sedangkan index akhir tidak akan masuk dalam array yang baru. Slice nantinya pasti akan menghasilkan nilai array baru sehingga dalam slice perlu ditampung dalam array yang baru</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3 class="judul">Splice</h3>
+                        <input class="input" type="number" placeholder="posisi elemen" id="posSplice">
+                        <input class="input" type="number" placeholder="elemen yang ingin ditambahkan" id="splice">
+                        <button onclick=splice()>Splice</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3 class="judul">Slice</h3>
+                        <input type="number" class="input" placeholder="Index Awal" id="indexAwal">
+                        <input type="number" class="input" placeholder="Index Akhir" id="indexAkhir">
+                        <button onclick=slice()>Slice</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <h3 class="judul">Filter dan Find</h3>
+                        <p>
+                            Method JavaScript filter dan find digunakan untuk mencari sebuah elemen pada array.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>   
     </body>
