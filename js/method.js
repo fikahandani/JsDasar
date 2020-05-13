@@ -58,3 +58,40 @@ function slice(){
         alert(hasil)
     }
 }
+function filter(){
+    var data = [1,2,3,4,5,6,7,8,9,10]
+    var filter = document.getElementById("filter").value
+    if(filter==""){
+        alert("Data Kosong")
+    }
+    else{
+        var angka = data.filter(function(x){
+            return x==filter
+        })
+        if(angka==[]){
+            alert("Data Tidak Ditemukan")
+        }
+        else{
+            alert("Angka "+ angka +" Ditemukan")
+        }
+    }
+    
+}
+function find(){
+    var data = [1,2,3,4,5,6,7,8,9,10]
+    var find = document.getElementById("find").value
+    if(find==""){
+        alert("Data Kosong")
+    }
+    else{
+        var angka = data.find(function(x){
+            return x==find
+        })
+        if(angka==undefined){
+            alert("Data tidak ditemukan")
+        }
+        else{   
+            alert("Angka "+angka+" Dapat di Fidnd")
+        }
+    }
+}
